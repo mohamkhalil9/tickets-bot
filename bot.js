@@ -8,12 +8,12 @@ function clean(text) {
         return text;
 }
 
-const prefix = "-";
+const prefix = "!";
 const token = "Token Your Bot";
 
 client.on("ready", () => {
   console.log("Vulnix | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`Support Magic |${prefix}new`);
+  client.user.setGame(``);
 });
 
 
@@ -24,7 +24,7 @@ client.on("message", (message) => {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: Vulnix Help`)
     .setColor(0xCF40FA)
-    .setDescription(`Hello! I'm Vulnix, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
+    .setDescription(`!new مرحبا لعمل تيكت للمساعده الرجاء كتابة`)
     .addField(`Tickets`, `[${prefix}new]() > Opens up a new ticket and tags the Support Team\n[${prefix}close]() > Closes a ticket that has been resolved or been opened by accident`)
     .addField(`Other`, `[${prefix}help]() > Shows you this help menu your reading\n[${prefix}ping]() > Pings the bot to see how long it takes to react\n[${prefix}about]() > Tells you all about Vulnix`)
     message.channel.send({ embed: embed });
@@ -35,16 +35,7 @@ client.on("message", (message) => {
     m.edit(`:ping_pong: Wew, made it over the ~waves~ ! **Pong!**\nMessage edit time is ` + (m.createdTimestamp - message.createdTimestamp) + `ms, Discord API heartbeat is ` + Math.round(client.ping) + `ms.`);
     });
 }
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : i1Suhaib`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Tickets System |!new| By ! Mohamad_Doleh . `,"http://twitch.tv/S-F")
-client.user.setStatus("dnd")
-});
+    
     
 if (message.content.toLowerCase().startsWith(prefix + `new`)) {
     const reason = message.content.split(" ").slice(1).join(" ");
@@ -103,7 +94,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`-new to make ticket | #♛ Fantasy ♛`,"http://twitch.tv/Death Shop")
+client.user.setGame(`Arab Fivem Mods |!help لمعرفة المزيد اكتب `,"http://twitch.tv/Death Shop")
 client.user.setStatus("online")
 });
 
