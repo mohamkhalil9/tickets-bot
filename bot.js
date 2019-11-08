@@ -94,7 +94,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Arab Fivem Mods |!help لمعرفة المزيد اكتب `,"http://twitch.tv/Death Shop")
+client.user.setGame(`Arab Force Host™ |!help لمعرفة المزيد اكتب `,"http://twitch.tv/Death Shop")
 client.user.setStatus("online")
 });
 
